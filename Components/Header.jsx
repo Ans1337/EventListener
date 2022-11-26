@@ -10,6 +10,5 @@ export default function Header() {
                 <Link className='header-items header-link header-item-button' href="/">Home</Link>
             </div>
         </>
-
     );
 }
