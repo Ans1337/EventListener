@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function Index() {
   return (
     <>
@@ -11,12 +13,12 @@ export default function Index() {
         </h1>
 
         <p className="text-1">
-          The Graph is an indexing protocol for querying networks like Ethereum
-          and IPFS. Anyone can build and Publish open APIs called subgraphs,
-          making data easily accessible.
+          The Google of Blockchain is an indexing protocol for querying networks
+          like Ethereum and IPFS. Anyone can build and Publish open APIs called
+          subgraphs, making data easily accessible.
         </p>
 
-        <button className="button-1">Explore Subgraphs</button>
+        <Link className="button-1" href="/subgraph">Explore Subgraphs</Link>
       </section>
 
       {/*--------------- Section 2 ----------------- */}
@@ -50,12 +52,54 @@ export default function Index() {
           </h1>
 
           <p className="text-1">
-            Before the Graph, teams had to develop and operate proprietary
-            indexing servers. <br /> This required significant engineering and
-            hardware resources and broke the <br />
+            Before the Google of Blockchain, teams had to develop and operate
+            proprietary indexing servers. <br /> This required significant
+            engineering and hardware resources and broke the <br />
             important security properties required for decentralization.
           </p>
         </div>
+      </section>
+
+      {/* ---------------- Section 4 ----------------- */}
+      <section class="section-4">
+        <p className="title-1">Actors for Google of Blockchains </p>
+        <p>Our whole system depends upon these indivisuals.</p>
+
+        <div class="row">
+          {/* <!-- pic 1 --> */}
+          <div class="course-col">
+            <img class="image" src="assets1/Indexer.png" />
+            <h5 className="text-2">Indexer</h5>
+            <p>
+              Can join network and stake GRT tokens to play as indexers, that
+              can run a node. Their main function is: they can index a subgraph,
+              earn rewards, and can set the price for the services they provide.
+            </p>
+          </div>
+
+          {/* <!-- pic 2 --> */}
+          <div class="course-col">
+            <img class="image" src="assets1/Curator.svg" />
+            <h5 className="text-2">Curator</h5>
+            <p>
+              uses GRT tokens to highlight which subgraphs are worth indexing.
+              Curators are the end users that finds particular subgraphs are
+              worth indexing.
+            </p>
+          </div>
+
+          {/* <!-- pic 3 --> */}
+          <div class="course-col">
+            <img class="image" src="assets1/Delegator.png" />
+            <h5 className="text-2">Delegators</h5>
+            <p>
+              stake GRT tokens on the behalf of indexers. So that they can earn
+              a portion of the rewards of indexers. They don’t have to run a
+              node.
+            </p>
+          </div>
+        </div>
+        <button class="showMore-button">SHOW MORE</button>
       </section>
     </>
   );

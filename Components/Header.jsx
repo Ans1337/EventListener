@@ -5,9 +5,9 @@ export default function Header() {
     return (
         <>
             <div className='header'>
-                <ConnectButton className='header-items'></ConnectButton>
-                <Link className='header-items header-link header-item-button' href="/subgraph">SUBGRAPH</Link>
-                <Link className='header-items header-link header-item-button' href="/">Home</Link>
+                <ConnectButton></ConnectButton>
+                <Link className='header-link header-item-button' href="/subgraph">SUBGRAPH</Link>
+                <Link className='header-link header-item-button' href="/">Home</Link>
             </div>
         </>
     );

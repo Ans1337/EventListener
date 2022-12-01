@@ -93,8 +93,10 @@
 
   padding-top: 100px;
   padding-bottom: 100px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+
+  z-index: 1;
 }
 
 .row {
@@ -191,6 +193,80 @@
 
   padding-top: 100px;
   padding-bottom: 100px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+
+  text-align: center;
+}
+
+/* ------------------ Section 4 ------------------- */
+.section-4 {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  background-color: #0c0a1d;
+
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.row {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.course-col {
+  flex-basis: 31%;
+  background: rgba(255, 255, 255, 0.04);
+  background-color: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.course-col:hover {
+  /* box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2); */
+  transform: translate3D(0, -1px, 0) scale(1.02);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.04);
+}
+
+.image {
+  width: 60%;
+  margin-bottom: 10px;
+}
+
+.showMore-button {
+  background-color: rgb(58, 58, 58);
+  color: white;
+  border: none;
+  height: 40px;
+  width: 110px;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 13px;
+  cursor: pointer;
+  margin-right: 8px;
+  transition: 0.5s;
+}
+
+.showMore-button:hover {
+  transform: translate3D(0, -1px, 0) scale(1.02);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.04);
+}
+
+@media only screen and (max-width: 600px) {
+  .row {
+    flex-direction: column;
+  }
 }
